@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Flora Fauna Scanner",
+    "slug": "flora-fauna-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/natively-dark.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/natively-dark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2D7A2D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.florafaunascanner",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos of plants and animals for identification.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select images of plants and animals for identification."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/natively-dark.png",
+        "backgroundColor": "#2D7A2D"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.florafaunascanner",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/final_quest_240x240.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "This app needs access to your photos to identify plants and animals.",
+          "cameraPermission": "This app needs access to your camera to take photos of plants and animals for identification."
+        }
+      ]
+    ],
+    "scheme": "flora-fauna-scanner",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "backendUrl": "https://jbfax853we9eased2prj22dkxjnhrutm.app.specular.dev"
+    }
+  }
+}
